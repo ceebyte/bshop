@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>bshop</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "wind", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body class="bg-tertiary w-full h-full">
+    <div class="w-full h-20 flex bg-tertiary">
+      <div class="flex-none w-20 h-20 flex justify-center items-center lg:hidden">
+        <div class="w-14 h-14 flex flex-col justify-evenly items-center ">
+          <span class="w-10 h-0.5 bg-secondary rounded"></span>
+          <span class="w-10 h-0.5 bg-secondary rounded"></span>
+          <span class="w-10 h-0.5 bg-secondary rounded"></span>
+        </div>
+      </div>
+      <div class="grow lg:w-3/12 flex justify-center items-center lg:justify-start">
+        <h1 class="font-prism text-6xl text-primary lg:ml-10">BSHOP</h1>
+      </div>
+      <div class="hidden lg:flex lg:w-6/12 lg:justify-center lg:space-x-24 lg:items-center font-poppins text-primary text-lg">
+        <a href="" class="my-underline-animation">WYPRZEDAŻ</a>
+        <a href="" class="my-underline-animation">PRODUKTY</a>
+        <a href="" class="my-underline-animation">DOSTAWA I PŁATNOŚCI</a>
+      </div>
+      <div class="hidden lg:flex lg:w-3/12">
+        
+      </div>
+      <div class="flex-none w-20 h-20 lg:hidden"></div>
+    </div>
+    <%= yield %>
+  </body>
+</html>
