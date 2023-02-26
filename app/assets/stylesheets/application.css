@@ -25,7 +25,7 @@
 
 @layer utilities {
     .my-underline-animation {
-        @apply relative ml-10 text-primary font-poppins text-lg tracking-[1px]
+        @apply relative ml-10 text-primary font-poppins tracking-[1px]
     }
     .my-underline-animation::after{
         @apply content-[''] bg-primary absolute h-[3px] w-[0%] left-0 -bottom-[5px] rounded-xl duration-300

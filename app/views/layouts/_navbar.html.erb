@@ -1,21 +1,20 @@
 <header class="font-poppins">
-    <nav class="w-full h-20 flex justify-center items-center">
+    <nav class="w-full h-20 flex justify-center items-center shadow-lg lg:flex-row lg:justify-start ">
         <input type="checkbox" id="burger" class="peer/burg hidden">
-        <label for="burger" class="absolute top-0 left-0 w-20 h-20 flex peer-checked/burg:hidden justify-center items-center "><span class="material-symbols-outlined">menu</span></label>
-        <label for="burger" class="absolute top-0 left-0 w-20 h-20 hidden peer-checked/burg:flex justify-center items-center "><span class="material-symbols-outlined">menu_open</span></label>        
-        <div class="">
+        <label for="burger" class="absolute top-0 left-0 w-20 h-20 flex peer-checked/burg:hidden justify-center items-center cursor-pointer select-none lg:hidden"><span class="material-symbols-outlined">menu</span></label>
+        <label for="burger" class="absolute top-0 left-0 w-20 h-20 hidden peer-checked/burg:flex justify-center items-center cursor-pointer select-none lg:hidden"><span class="material-symbols-outlined">menu_open</span></label>        
+        <div class="flex lg:h-20 lg:w-[20%] lg:left-10 lg:justify-center items-center">
             <a href=""><h1 class="font-prism text-6xl text-primary hover:text-7xl duration-300 delay-150">bshop</h1></a>
         </div>
-        <div class="hidden absolute top-20 w-full peer-checked/burg:block ">
-            <ul class="flex flex-col items-center justify-center ">
-                <a href=""><li class="leading-10 text-xl mt-3 hover:text-secondary md:leading-normal ">WYPRZEDAŻ</li></a>
-                <a href=""><li class="leading-10 text-xl mt-3 hover:text-secondary md:leading-normal ">PRODUKTY</li></a>
-                <a href=""><li class="leading-10 text-xl mt-3 hover:text-secondary md:leading-normal ">DOSTAWA I PŁATNOŚCI</li></a>
+        <div class="hidden absolute top-20 w-full peer-checked/burg:block shadow-lg lg:flex lg:top-0 lg:w-[80%] lg:h-20 lg:right-0 lg:shadow-none">
+            <ul class="flex flex-col items-center justify-center lg:flex-row lg:gap-10 lg:w-[70%] lg:justify-start">
+                <a href=""><li class="leading-10 text-xl mt-3 hover:text-secondary lg:m-0 lg:text-lg lg:leading-normal lg:ml-10 lg:my-underline-animation">WYPRZEDAŻ</li></a>
+                <a href=""><li class="leading-10 text-xl mt-3 hover:text-secondary lg:m-0 lg:text-lg lg:leading-normal lg:my-underline-animation">MĘŻCZYŹNI</li></a>
+                <a href=""><li class="leading-10 text-xl mt-3 hover:text-secondary lg:m-0 lg:text-lg lg:leading-normal lg:my-underline-animation">KOBIETY</li></a>
             </ul>
-            <div class="w-full flex justify-evenly mt-6 md:justify-center">
-                <a href=""><button class="w-32 h-10 bg-primary text-tertiary rounded-xl hover:scale-105 duration-150 delay-75 ">ZALOGUJ SIĘ</button></a>
-                <a href=""><button class="w-40 h-10 bg-tertiary border-2 border-solid rounded-xl hover:scale-105 duration-150 delay-75">REJESTRACJA</button></a>
-                
+            <div class="w-full flex mt-6 mb-5 justify-center gap-10 lg:m-0 lg:w-[30%] lg:gap-5 lg:items-center lg:justify-end lg:mr-10">
+                <a href=""><button class="w-32 h-10 bg-primary text-tertiary rounded-xl hover:scale-105 duration-150 delay-75 lg:w-24 lg:text-sm">ZALOGUJ SIĘ</button></a>
+                <a href=""><button class="w-40 h-10 bg-tertiary border-2 border-solid rounded-xl hover:scale-105 duration-150 delay-75 lg:w-28 lg:text-sm">REJESTRACJA</button></a>              
             </div>
         </div>
     </nav>
