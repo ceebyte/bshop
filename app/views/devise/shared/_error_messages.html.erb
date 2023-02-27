@@ -1,0 +1,20 @@
+<div class="flex w-full">
+  <% if resource.errors.any? %>
+  <input type="checkbox" id="cep" class="peer/cep hidden">
+    <label for="cep" class="absolute top-2 right-2 flex peer-checked/cep:hidden"><span class="material-symbols-outlined">close</span></label>
+    
+    <div id="error_explanation" data-turbo-cache="false" class="peer-checked/cep:hidden">
+      <h2>
+        <%= I18n.t("errors.messages.not_saved",
+                  count: resource.errors.count,
+                  resource: resource.class.model_name.human.downcase)
+        %>
+      </h2>
+      <ul>
+        <% resource.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+</div>

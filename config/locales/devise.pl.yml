@@ -1,0 +1,145 @@
+# Additional translations at https://github.com/plataformatec/devise/wiki/I18n
+
+# pl:
+#   devise:
+#     confirmations:
+#       confirmed: "Twoje konto zostało aktywowane. Zostałeś pomyślnie zalogowany."
+#       send_instructions: "Za chwilę otrzymasz email z instrukcją jak aktywować konto."
+#       send_paranoid_instructions: "Jeśli Twój adres email istnieje w naszej bazie, za chwilę powinieneś otrzymać instrukcję jak aktywować konto."
+#     failure:
+#       already_authenticated: "Jesteś aktualnie zalogowany."
+#       inactive: "Twoje konto nie zostało jeszcze aktywowane."
+#       invalid: "Błędny adres email lub hasło."
+#       invalid_token: "Błędny token aktywacyjny."
+#       locked: "Twoje konto jest zablokowane."
+#       not_found_in_database: "Błędny adres email lub hasło."
+#       timeout: "Sesja wygasła, zaloguj się ponownie by kontynuować."
+#       unauthenticated: "Aby kontynuować musisz się zalogować."
+#       unconfirmed: "Aby kontynuować musisz aktywować swoje konto."
+#     mailer:
+#       confirmation_instructions:
+#         subject: "Instrukcja aktywacji konta"
+#       reset_password_instructions:
+#         subject: "Instrukcja zresetowania hasła."
+#       unlock_instructions:
+#         subject: "Instrukcja odblokowania konta"
+#     omniauth_callbacks:
+#       failure: "Logowanie przez konto %{kind} zakończyło się błędem: \"%{reason}\"."
+#       success: "Zalogowałeś się pomyślnie przez konto %{kind}."
+#     passwords:
+#       no_token: "Dostęp do tej strony jest możliwy jedynie poprzez użycie prawidłowego adresu z emaila z instrukcjami o resecie hasłą. Jeżeli właśnie skorzystałeś z tego adresu, sprawdź czy użyty adres jest zgodny z tym w emailu."
+#       send_instructions: "Za chwilę otrzymasz emaila z instrukcją jak zresetować hasło."
+#       send_paranoid_instructions: "Jeżeli Twój adres istnieje w naszej bazie, otrzymasz za chwilę emaila z instrukcją zmiany hasła."
+#       updated: "Twoje hasło zostało zmienione. Zostałeś pomyślnie zalogowany."
+#       updated_not_active: "Twoje hasło zostało zmienione."
+#     registrations:
+#       destroyed: "Do widzenia! Twoje konto zostało usunięte."
+#       signed_up: "Witaj! Zarejestrowałeś się pomyślnie."
+#       signed_up_but_inactive: "Zarejestrowałeś się pomyślnie. Niemniej jednak nie zostałeś zalogowany, ponieważ Twoje konto nie zostało jeszcze aktywowane."
+#       signed_up_but_locked: "Zarejestrowałeś się pomyślnie. Niemniej jednak nie zostałeś zalogowany, ponieważ Twoje konto zostało zablokowane."
+#       signed_up_but_unconfirmed: "Wiadomość email z instrukcją aktywacji konta została przesłana na Twój adres email. Użj linku z emaila aby aktywować konto."
+#       update_needs_confirmation: "Konto zostało zaktualizowane. Niemniej jednak przed wprowadzeniem zmian musimy potwierdzić Twój nowy adres email. Za chwilę wyślemy instrukcję na nowy adres."
+#       updated: "Konto zostało pomyślnie zaktualizowane."
+#     sessions:
+#       user:
+#         signed_in: "Zostałeś zalogowany."
+#         signed_out: "Zostałeś wylogowany."
+#     unlocks:
+#       send_instructions: "Za chwilę otrzymasz wiadomość email z instrukcją jak odblokować konto."
+#       send_paranoid_instructions: "Jeżeli Twoje konto istnieje, otrzymasz wiadomość emial z instrukcją jak odblokować konto."
+#       unlocked: "Twoje konto została pomyślnie odblokowane. Zaloguj się by kontynuować."
+#   errors:
+#     messages:
+#       already_confirmed: "już został aktywowany, proszę spróbować się zalogować."
+#       confirmation_period_expired: "musi zostać potwierdzony w czasie %{period}, wyślij zapytanie o nowy."
+#       expired: "stracił ważność, wyślij zapytanie o nowy."
+#       not_found: "nie znaleziono"
+#       not_locked: "nie był zablokowany"
+#       not_saved:
+#         one: "%{resource} nie został zapisany z powodu błędu:"
+#         other: "%{resource} nie został zapisany z powodu następujących błędów:"
+
+
+pl:
+  devise:
+    confirmations:
+      confirmed: "Twój email został zatwierdzony." #Your email address has been successfully confirmed.
+      send_instructions: "Za chwilę otrzymasz instrukcję na podany adres jak potwierdzić email." #You will receive an email with instructions for how to confirm your email address in a few minutes.
+      send_paranoid_instructions: "Jeżeli twój adres istnieje w naszej bazie danych, otrzymasz email jak go potwierdzić." #If your email address exists in our database, you will receive an email with instructions for how to confirm your email address in a few minutes.
+    failure:
+      already_authenticated: "Jesteś już zalogowany." #You are already signed in.
+      inactive: "Twoje konto nie zostało jeszcze aktywowane." #Your account is not activated yet.
+      invalid: "Niepoprawny %{authentication_keys} lub hasło." #Invalid %{authentication_keys} or password.
+      locked: "Twoje konto jest zablokowane." #Your account is locked.
+      last_attempt: "Masz ostatnią próbę zanim twoje konto zostanie zablokowane." #You have one more attempt before your account is locked.
+      not_found_in_database: "Niepoprawny %{authentication_keys} lub hasło" #Invalid %{authentication_keys} or password.
+      timeout: "Twoja aktualna sesja wygasła. Zaloguj się ponownie." #Your session expired. Please sign in again to continue.
+      unauthenticated: "Aby kontynuować musisz być zalogowany!" #You need to sign in or sign up before continuing.
+      unconfirmed: "Aby kontynuować musisz potwierdzić twój adres email." #You have to confirm your email address before continuing.
+    mailer:
+      confirmation_instructions:
+        subject: "Instrukcje dotyczące potwierdzenia." #Confirmation instructions
+      reset_password_instructions:
+        subject: "Instrukcje dotyczące resetowania hasła." #Reset password instructions
+      unlock_instructions:
+        subject: "Instrukcje dotyczące odblokowania konta." #Unlock instructions
+      email_changed:
+        subject: "Email został zmieniony." #Email Changed
+      password_change:
+        subject: "Hasło zostało zmienione." #Password Changed
+    omniauth_callbacks:
+      failure: "%{kind} : identyfikacja nie powiodła się z powodu \"%{reason}\"." #Could not authenticate you from %{kind} because \"%{reason}\".
+      success: "Pomyślnie aktywowano konto %{kind} ." #Successfully authenticated from %{kind} account.
+    passwords:
+      no_token: "Nie masz dostępu do tej strony poza linkiem wysłanym na twój email. Upewnij się, że adres URL jest poprawny." #You can't access this page without coming from a password reset email. If you do come from a password reset email, please make sure you used the full URL provided.
+      send_instructions: "Za chwilę otrzymasz email z instrukcjami jak zresetować twoje hasło." #You will receive an email with instructions on how to reset your password in a few minutes.
+      send_paranoid_instructions: "Jeżeli twój adres instnieje w naszej bazie danych za chwilę otrzymasz link do zresetowania twojego hasła." #If your email address exists in our database, you will receive a password recovery link at your email address in a few minutes.
+      updated: "Twoje hasło zostało zmienione pomyślnie. Zostałeś zalogowany." #Your password has been changed successfully. You are now signed in.
+      updated_not_active: "Twoje hasło zostało zmienione pomyślnie." #Your password has been changed successfully.
+    registrations:
+      destroyed: "Twoje konto zostało usunięte. Mamy nadzieję, że się jeszcze zobaczymy!" #Bye! Your account has been successfully cancelled. We hope to see you again soon.
+      signed_up: "Rejestracja przebiegła pomyślnie." #Welcome! You have signed up successfully.
+      signed_up_but_inactive: "Rejestracja przebiegła pomyślnie, aktywuj swoje konto przez link wysłany na twój email." #You have signed up successfully. However, we could not sign you in because your account is not yet activated.
+      signed_up_but_locked: "Rejestracja przebiegła pomyślnie. Nie mogliśmy cię zalogować, ponieważ twoje konto jest zablokowane." #You have signed up successfully. However, we could not sign you in because your account is locked.
+      signed_up_but_unconfirmed: "A message with a confirmation link has been sent to your email address. Please follow the link to activate your account."
+      update_needs_confirmation: "Twoje konto zostało zaktualizowane. Kliknij link przesłany na twój email, aby go potwierdzić." #You updated your account successfully, but we need to verify your new email address. Please check your email and follow the confirmation link to confirm your new email address.
+      updated: "Twoje konto zostało zaktualizowane." #Your account has been updated successfully.
+      updated_but_not_signed_in: "Twoje konto zostało zaktualizowane. Twoje hasło zostało zmienione. Zaloguj się ponownie." #Your account has been updated successfully, but since your password was changed, you need to sign in again.
+    sessions:
+      signed_in: "Zalogowano pomyślnie." #Signed in successfully.
+      signed_out: "Wylogowano pomyślnie." #Signed out successfully.
+      already_signed_out: "Wylogowano pomyślnie." #Signed out successfully.
+    unlocks:
+      send_instructions: "Za chwilę otrzymasz email z instrukcją jak odblokować twoje konto." #You will receive an email with instructions for how to unlock your account in a few minutes. 
+      send_paranoid_instructions: "Jeśli twoje konto instnieje za chwilę otrzymasz maila z instrukcją jak je odblokować." #If your account exists, you will receive an email with instructions for how to unlock it in a few minutes.
+      unlocked: "Twoje konto zostało odblokowane. Zaloguj się." #Your account has been unlocked successfully. Please sign in to continue.
+  errors:
+    messages:
+      already_confirmed: "został potwierdzony, zaloguj się." #was already confirmed, please try signing in
+      confirmation_period_expired: "musiał być potwierdzony do %{period}, wyślij kolejny." #needs to be confirmed within %{period}, please request a new one
+      expired: "wygasł, wyślij kolejny." #has expired, please request a new one
+      not_found: "nie znaleziono." #not found
+      not_locked: "zostało zablokowane." #
+      not_saved:
+        one: "1 błąd przeszkodził w zapisie:" #%{resource}
+        other: "%{count} błędy przeszkodziły w zapisie:" #%{resource}
+
+  activerecord:
+    models:
+      attributes:
+        user:
+          password: 'Hasło'
+    errors:
+      models:
+        user:
+          password: 'hasło'
+          attributes:
+            email:
+              blank: 'jest wymagany.'
+            password:
+              blank: 'jest wymagane.'
+              
+  activemodel:
+    attributes:
+      user:
+        password: 'hasło'
